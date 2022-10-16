@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("../fonts/montserrat/montserratSemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("../fonts/montserrat/montserratRegular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'openSans';
+    src: url("../fonts/openSans/openSansRegular.ttf");
+    font-weight: 400;
+}
+
+
+html {
+    font-size: 125%;
+}
+
+body{
+    font-family: $bodyFont;
+    font-size: $baseFontSize;
+}
+
+h1{
+    font-family: $headingFont;
+    font-weight: 600;
+}
+h1, h2, h3, h4, blockquote {
+    font-family: $headingFont;
+}

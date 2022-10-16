@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.wrapper{
+    max-width: 1560px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button{
+    margin-top: 1.5rem;
+    color: red;
+    background-color: black;
+    padding: 15px 15px 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover, &:focus{
+        background-color: white;
+    }
+    &.findOut{
+        color: white;
+        background-color: black;
+        &:hover, &:focus {
+            color: black;
+            background-color: red;
+        }
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

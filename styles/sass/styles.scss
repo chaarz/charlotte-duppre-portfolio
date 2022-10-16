@@ -1,2 +1,5 @@
-
-@use "./partials/header"
+@use "./partials/setup";
+@use "./partials/typography";
+@use "./partials/baseStyles";
+@use "./partials/header";
+@use "./partials/variables" as *;
