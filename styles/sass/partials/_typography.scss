@@ -26,12 +26,29 @@ html {
 body{
     font-family: $bodyFont;
     font-size: $baseFontSize;
+    color: $primaryColour;
+    background-color: $quaternaryColour;
 }
+
+.logo{
+    font-family: $headingFont;
+} 
 
 h1{
     font-family: $headingFont;
     font-weight: 600;
+    font-size: 3.2rem;
 }
+
 h1, h2, h3, h4, blockquote {
     font-family: $headingFont;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+a{
+    color: $primaryColour;
 }

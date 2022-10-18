@@ -259,15 +259,31 @@ html {
 body {
   font-family: "openSans";
   font-size: 1rem;
+  color: #212529;
+  background-color: #DEE2E6;
+}
+
+.logo {
+  font-family: "montserrat";
 }
 
 h1 {
   font-family: "montserrat";
   font-weight: 600;
+  font-size: 3.2rem;
 }
 
 h1, h2, h3, h4, blockquote {
   font-family: "montserrat";
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a {
+  color: #212529;
 }
 
 .wrapper {
@@ -304,7 +320,47 @@ img {
   display: block;
 }
 
-header {
-  background-color: black;
-  color: white;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
+}
+
+header .logo {
+  border: 2px solid #212529;
+  padding: 0.5rem;
+}
+header .headerTextContainer {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.navBar {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desktopNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "montserrat";
+}
+.desktopNav ul li {
+  padding-left: 2rem;
 }

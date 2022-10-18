@@ -1,6 +1,12 @@
 @use "variables" as *;
 
 header{
-    background-color: black;
-    color: white
+    .logo{
+        border: 2px solid $primaryColour;
+        padding: 0.5rem;
+    }
+    .headerTextContainer{
+        padding: 3rem 0;
+        text-align: center;
+    }
 }
