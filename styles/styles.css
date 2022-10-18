@@ -364,3 +364,12 @@ header .headerTextContainer {
 .desktopNav ul li {
   padding-left: 2rem;
 }
+
+.aboutFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutFlexContainer .aboutImgContainer img {
+  border-radius: 50%;
+}
