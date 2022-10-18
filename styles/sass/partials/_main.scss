@@ -1,7 +1,12 @@
 @use "variables" as *;
 
+section{
+    padding: 5rem 0;
+}
+
 .aboutFlexContainer{
     display: flex;
+    gap: 2rem;
     .aboutImgContainer{
         img{
            border-radius: 50%;
