@@ -426,3 +426,7 @@ section {
 .skillsFlexContainer .skillsList li {
   text-align: center;
 }
+
+footer {
+  text-align: center;
+}
