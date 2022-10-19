@@ -8,9 +8,23 @@ section{
     display: flex;
     gap: 2rem;
     .aboutImgContainer{
-        img{
-           border-radius: 50%;
-        }
+        // img{
+        //    border-radius: 50%;
+        // }
     }
     
+}
+
+.skillsFlexContainer{
+    display: flex;
+    gap: 5rem;
+    .skillsList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2.5rem;
+        li{
+            text-align: center;
+        }
+    }
 }

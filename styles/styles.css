@@ -261,20 +261,29 @@ body {
   font-size: 1rem;
   color: #212529;
   background-color: #DEE2E6;
+  line-height: 1.45rem;
+  letter-spacing: 1px;
 }
 
 .logo {
   font-family: "montserrat";
 }
 
+h1, h2, h3, h4, blockquote {
+  font-family: "montserrat";
+}
+
 h1 {
   font-family: "montserrat";
   font-weight: 600;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  line-height: 4.5rem;
 }
 
-h1, h2, h3, h4, blockquote {
-  font-family: "montserrat";
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
 }
 
 h3 {
@@ -328,7 +337,17 @@ a {
   text-decoration: none;
 }
 
-ul, li, a, input {
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
   padding: 0;
   margin: 0;
 }
@@ -387,6 +406,23 @@ section {
   display: flex;
   gap: 2rem;
 }
-.aboutFlexContainer .aboutImgContainer img {
-  border-radius: 50%;
+.skillsFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+.skillsFlexContainer .skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2.5rem;
+}
+.skillsFlexContainer .skillsList li {
+  text-align: center;
 }

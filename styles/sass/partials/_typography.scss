@@ -28,20 +28,29 @@ body{
     font-size: $baseFontSize;
     color: $primaryColour;
     background-color: $quaternaryColour;
+    line-height: 1.45rem;
+    letter-spacing: 1px;
 }
 
 .logo{
     font-family: $headingFont;
 } 
 
+h1, h2, h3, h4, blockquote {
+    font-family: $headingFont;
+}
+
 h1{
     font-family: $headingFont;
     font-weight: 600;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    line-height: 4.5rem;
 }
 
-h1, h2, h3, h4, blockquote {
-    font-family: $headingFont;
+h2{
+    font-size: 2.25rem;
+    line-height: 3rem;
 }
 
 h3{
