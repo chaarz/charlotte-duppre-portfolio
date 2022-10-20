@@ -43,9 +43,9 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper skills" id="skills">
-            <div class="skillsFlexContainer">
-                <div>
+        <section class="skills" id="skills">
+            <div class="skillsFlexContainer wrapper">
+                <div class="slillsText">
                     <h2>skills</h2>
                     <p>My techstack includes</p>
                 </div>
@@ -121,7 +121,36 @@
             </div>
         </section>
         <section class="contact" id="contact">
-            <h2>contact me</h2>
+            <div class="contactFlexContainer wrapper">
+                <div class="contactDetails">
+                    <h2>contact me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cupiditate sit, excepturi vel quisquam beatae possimus voluptas voluptate nostrum quae.</p>
+                    <div class="socialIcons">
+                        <a href="https://www.linkedin.com/in/charlotteduppre/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="visually-hidden">Link to Linkedin</span><!-- for screen readers only -->
+                        </a>
+                        <a href="https://github.com/chaarz">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="visually-hidden">Link to GitHub</span><!-- for screen readers only -->
+                        </a>
+                    </div><!--socialIcons ends-->
+                </div>
+                <div class="formContainer">
+                    <form action="#" method="#" class="contactForm" name="myForm">
+
+                        <label for="userName" class="visually-hidden">Name</label>
+                        <input type="text" id="userName" name="userName" placeholder="Name">
+
+                        <label for="email" class="visually-hidden">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+
+                        <label for="message" class="visually-hidden">Message</label>
+                        <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="500" placeholder="Message"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form><!--contactForm ends-->
+                </div> <!--formContainer ends-->
         </section>
     </main>
     <footer>

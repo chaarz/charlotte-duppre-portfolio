@@ -20,7 +20,11 @@ section{
 .skillsFlexContainer{
     display: flex;
     gap: 5rem;
+    .skillsText{
+        flex:1;
+    }
     .skillsList{
+        flex:1;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -32,17 +36,29 @@ section{
 }
 
 i{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 // PROJECTS
-
 .projectContainer{
+    padding-top: 2rem;
     display: flex;
     gap: 4rem;
     .projectDescription{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+    }
+}
+
+// CONTACT ME
+.contactFlexContainer{
+    display: flex;
+    gap: 3rem;
+    .contactDetails{
+        flex:1;
+    }
+    .formContainer{
+        flex: 2;
     }
 }

@@ -8,22 +8,15 @@
 
 button{
     margin-top: 1.5rem;
-    color: red;
-    background-color: black;
+    color: $primaryColour;
+    background-color: $quaternaryColour;
     padding: 15px 15px 10px 15px;
-    border: none;
+    border: 2px solid $primaryColour;
     cursor: pointer;
     transition: 0.3s;
     &:hover, &:focus{
-        background-color: white;
-    }
-    &.findOut{
-        color: white;
-        background-color: black;
-        &:hover, &:focus {
-            color: black;
-            background-color: red;
-        }
+        color: $quaternaryColour;
+        background-color: $secondaryColour;
     }
 }
 

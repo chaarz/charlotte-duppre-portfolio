@@ -303,24 +303,17 @@ a {
 
 button {
   margin-top: 1.5rem;
-  color: red;
-  background-color: black;
+  color: #212529;
+  background-color: #DEE2E6;
   padding: 15px 15px 10px 15px;
-  border: none;
+  border: 2px solid #212529;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 button:hover, button:focus {
-  background-color: white;
-}
-button.findOut {
-  color: white;
-  background-color: black;
-}
-button.findOut:hover, button.findOut:focus {
-  color: black;
-  background-color: red;
+  color: #DEE2E6;
+  background-color: #495057;
 }
 
 img {
@@ -412,7 +405,15 @@ section {
   display: flex;
   gap: 5rem;
 }
+.skillsFlexContainer .skillsText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .skillsFlexContainer .skillsList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,10 +429,11 @@ section {
 }
 
 i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .projectContainer {
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,9 +447,59 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contactFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+.contactFlexContainer .contactDetails {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.contactFlexContainer .formContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  color: #212529;
+  border: none;
+  border-bottom: 2px solid #212529;
+  background-color: transparent;
+  font-family: "openSans";
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+input {
+  padding: 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  border: 2px solid #212529;
+}
+
+button {
+  margin-top: 0;
 }
 
 footer {

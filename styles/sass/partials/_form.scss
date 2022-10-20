@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    color: $primaryColour;
+    border: none;
+    border-bottom: 2px solid $primaryColour;
+    background-color: transparent;
+    font-family: $bodyFont;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    // width: 100%;
+}
+
+input {
+    padding: 1rem;
+}
+
+textarea {
+    padding: 1rem;
+    border: 2px solid $primaryColour;
+}
+
+button{
+    margin-top: 0;
+}
