@@ -4,6 +4,7 @@ section{
     padding: 5rem 0;
 }
 
+// ABOUT ME
 .aboutFlexContainer{
     display: flex;
     gap: 2rem;
@@ -15,6 +16,7 @@ section{
     
 }
 
+// SKILLS
 .skillsFlexContainer{
     display: flex;
     gap: 5rem;
@@ -26,5 +28,21 @@ section{
         li{
             text-align: center;
         }
+    }
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+// PROJECTS
+
+.projectContainer{
+    display: flex;
+    gap: 4rem;
+    .projectDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
