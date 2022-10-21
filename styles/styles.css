@@ -260,7 +260,7 @@ body {
   font-family: "openSans";
   font-size: 1rem;
   color: #212529;
-  background-color: #DEE2E6;
+  background-color: #F8F9FA;
   line-height: 1.45rem;
   letter-spacing: 1px;
 }
@@ -295,6 +295,10 @@ a {
   color: #212529;
 }
 
+button {
+  font-family: "montserrat";
+}
+
 .wrapper {
   max-width: 1560px;
   width: 90%;
@@ -304,7 +308,7 @@ a {
 button {
   margin-top: 1.5rem;
   color: #212529;
-  background-color: #DEE2E6;
+  background-color: #F8F9FA;
   padding: 15px 15px 10px 15px;
   border: 2px solid #212529;
   cursor: pointer;
@@ -312,8 +316,8 @@ button {
   transition: 0.3s;
 }
 button:hover, button:focus {
-  color: #DEE2E6;
-  background-color: #495057;
+  color: #F8F9FA;
+  background-color: #212529;
 }
 
 img {
@@ -486,15 +490,15 @@ textarea {
   border-bottom: 2px solid #212529;
   background-color: transparent;
   font-family: "openSans";
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 
 input {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 textarea {
-  padding: 1rem;
+  padding: 0.5rem;
   border: 2px solid #212529;
 }
 

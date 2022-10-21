@@ -13,16 +13,16 @@ textarea {
     border-bottom: 2px solid $primaryColour;
     background-color: transparent;
     font-family: $bodyFont;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1rem, 2vw, 1rem);
     // width: 100%;
 }
 
 input {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 textarea {
-    padding: 1rem;
+    padding: 0.5rem;
     border: 2px solid $primaryColour;
 }
 

@@ -9,14 +9,14 @@
 button{
     margin-top: 1.5rem;
     color: $primaryColour;
-    background-color: $quaternaryColour;
+    background-color: $secondaryColour;
     padding: 15px 15px 10px 15px;
     border: 2px solid $primaryColour;
     cursor: pointer;
     transition: 0.3s;
     &:hover, &:focus{
-        color: $quaternaryColour;
-        background-color: $secondaryColour;
+        color: $secondaryColour;
+        background-color: $primaryColour;
     }
 }
 

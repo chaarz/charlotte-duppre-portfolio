@@ -27,7 +27,7 @@ body{
     font-family: $bodyFont;
     font-size: $baseFontSize;
     color: $primaryColour;
-    background-color: $quaternaryColour;
+    background-color: $secondaryColour;
     line-height: 1.45rem;
     letter-spacing: 1px;
 }
@@ -60,4 +60,8 @@ h3{
 
 a{
     color: $primaryColour;
+}
+
+button{
+    font-family: $headingFont;
 }
