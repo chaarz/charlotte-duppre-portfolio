@@ -9,20 +9,20 @@ const app = {};
 // 1. 
 app.myProject = [
     {
-        image: "./assets/theRestaurantMall.png",
-        alt: "Image of The Restaurant Mall",
-        title: "The Restaurant Mall",
-        languages: "HTML | CSS | Sass | JavaScript",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit dolores non consequuntur voluptates odit? Autem doloribus voluptate nihil aut.",
-        live: "https://the-restaurant-mall-cd.netlify.app/",
-        repo: "https://github.com/chaarz/Project-1-the-restaurant-mall"
+        image: "./assets/tastyTable.png",
+        alt: "Image of project Tasty Table",
+        title: "Tasty Table",
+        languages: "HTML | Sass | JavaScript | REST API",
+        description: "Tasty Table is food application leveraging Tasty's RESTful API and built with vanilla JavaScript. Features include an autocomplete and recipe generator using asynchronous API calls and error handling. This was a pair programming project completed with another developer.",
+        live: "https://tasty-table.netlify.app/",
+        repo: "https://github.com/tastyTable/tastyTableApp"
     },
     {
         image: "./assets/theRestaurantMall.png",
-        alt: "Image of Project 2",
-        title: "This is my project 2",
-        languages: "HTML | CSS | Sass | JavaScript | REST API",
-        description: "This is a pair project using an API call Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit dolores non consequuntur voluptates odit? Autem doloribus voluptate nihil aut.",
+        alt: "Image of The Restaurant Mall Project",
+        title: "The Restaurant Mall",
+        languages: "HTML | Sass | JavaScript",
+        description: "The Restaurant Mall is a multi-page PSD conversion made using given mockup design files, featuring a Home, Blog and Contact page. This is a fully responsive website (down to 320px), built with Sass, and adheres to accessibility best standards (including aria labels and proper structural elements like heading orders).",
         live: "https://the-restaurant-mall-cd.netlify.app/",
         repo: "https://github.com/chaarz/Project-1-the-restaurant-mall"
     }
