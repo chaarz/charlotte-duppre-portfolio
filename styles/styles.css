@@ -441,9 +441,17 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
+}
+.projectContainer .projectImgContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .projectContainer .projectDescription {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,15 +499,12 @@ textarea {
   background-color: transparent;
   font-family: "openSans";
   font-size: clamp(1rem, 2vw, 1rem);
-}
-
-input {
   padding: 0.5rem;
 }
 
 textarea {
-  padding: 0.5rem;
   border: 2px solid #212529;
+  resize: none;
 }
 
 button {

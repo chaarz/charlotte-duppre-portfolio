@@ -43,8 +43,12 @@ i{
 .projectContainer{
     padding-top: 2rem;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+    .projectImgContainer{
+        flex: 1;
+    }
     .projectDescription{
+        flex: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
