@@ -22,9 +22,27 @@ app.myProject = [
         alt: "Image of The Restaurant Mall Project",
         title: "The Restaurant Mall",
         languages: "HTML | Sass | JavaScript",
-        description: "The Restaurant Mall is a multi-page PSD conversion made using given mockup design files, featuring a Home, Blog and Contact page. This is a fully responsive website (down to 320px), built with Sass, and adheres to accessibility best standards (including aria labels and proper structural elements like heading orders).",
+        description: "The Restaurant Mall is a multi-page PSD conversion made using mockup pieces of a provided website design, featuring a Home, Blog and Contact page. This is a fully responsive website (down to 320px), built with Sass, and adheres to accessibility best standards (including aria labels and proper structural elements like heading hierarchy).",
         live: "https://the-restaurant-mall-cd.netlify.app/",
         repo: "https://github.com/chaarz/Project-1-the-restaurant-mall"
+    },
+    {
+        image: "./assets/tastyPSDconversion.png",
+        alt: "Image of Tasty, a PSD conversion",
+        title: "Tasty, a PSD conversion",
+        languages: "HTML | CSS",
+        description: "Tasty is a PSD conversion project made using mockup pieces of a provided website design, featuring functional, responsible website elements.",
+        live: "#",
+        repo: "https://github.com/chaarz/Chaarz-Tasty-assignment01"
+    },
+    {
+        image: "./assets/spaces.png",
+        alt: "Image of project Spaces",
+        title: "Spaces",
+        languages: "HTML | CSS",
+        description: "Spaces is a PSD conversion project made using mockup pieces of a provided website design, featuring functional, responsible website elements.",
+        live: "https://spaces-cd.netlify.app/",
+        repo: "#"
     }
 ] 
 

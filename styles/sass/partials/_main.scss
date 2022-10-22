@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 section{
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 // ABOUT ME
@@ -40,15 +40,19 @@ i{
 }
 
 // PROJECTS
+
 .projectContainer{
     padding-top: 2rem;
     display: flex;
     gap: 2rem;
+    // &:nth-child(odd){
+    //     flex-direction: row-reverse;
+    // }
     .projectImgContainer{
         flex: 1;
     }
     .projectDescription{
-        flex: 2;
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
