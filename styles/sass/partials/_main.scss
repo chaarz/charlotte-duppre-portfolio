@@ -8,11 +8,11 @@ section{
 .aboutFlexContainer{
     display: flex;
     gap: 2rem;
-    .aboutImgContainer{
-        // img{
-        //    border-radius: 50%;
-        // }
-    }
+    // .aboutImgContainer{
+    //     // img{
+    //     //    border-radius: 50%;
+    //     // }
+    // }
     .aboutTextContainer{
         display: flex;
         flex-direction: column;
@@ -25,20 +25,20 @@ section{
 .skillsFlexContainer{
     display: flex;
     justify-content: space-between;
-    // gap: 5rem;
+    gap: 2rem;
     .skillsText{
-        // flex:1;
+        flex:2;
     }
     .skillsList{
-        // flex:1;
+        flex:1;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         // gap: 2.5rem;
         li{
             text-align: center;
-            width: calc((100%/4) - 4%);
-            margin: 2%;
+            width: calc((100%/4) - 8%);
+            margin: 4%;
         }
     }
 }

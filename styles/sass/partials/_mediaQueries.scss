@@ -1,0 +1,40 @@
+/****************************
+    Break point: 1000px
+*****************************/
+
+@media (max-width: 1000px) {
+    /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
+    
+
+    .aboutFlexContainer,
+    .skillsFlexContainer,
+    .projectContainer,
+    .contactFlexContainer{
+        flex-direction: column;
+    }
+
+
+    // ABOUT
+    .aboutFlexContainer{
+        .aboutImgContainer{
+            width: 60%;
+        }
+    }
+}
+
+
+/****************************
+    Break point: 480px
+*****************************/
+
+@media (max-width: 480px) {
+    /* Styles for MOBILE devices go within this breakpoint */
+
+    .skillsFlexContainer{
+        .skillsList{
+            li{
+                width: calc((100%/2) - 8%);
+            }
+        }
+    }
+}

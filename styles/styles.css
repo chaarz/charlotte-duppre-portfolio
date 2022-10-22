@@ -421,8 +421,17 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 2rem;
+}
+.skillsFlexContainer .skillsText {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .skillsFlexContainer .skillsList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,8 +443,8 @@ section {
 }
 .skillsFlexContainer .skillsList li {
   text-align: center;
-  width: 21%;
-  margin: 2%;
+  width: 17%;
+  margin: 4%;
 }
 
 i {
@@ -539,4 +548,32 @@ button {
 
 footer {
   text-align: center;
+}
+
+/****************************
+    Break point: 1000px
+*****************************/
+@media (max-width: 1000px) {
+  /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
+  .aboutFlexContainer,
+.skillsFlexContainer,
+.projectContainer,
+.contactFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutFlexContainer .aboutImgContainer {
+    width: 60%;
+  }
+}
+/****************************
+    Break point: 480px
+*****************************/
+@media (max-width: 480px) {
+  /* Styles for MOBILE devices go within this breakpoint */
+  .skillsFlexContainer .skillsList li {
+    width: 42%;
+  }
 }
