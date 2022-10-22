@@ -22,6 +22,22 @@
     }
 }
 
+/****************************
+    Break point: 480px
+*****************************/
+
+@media (max-width: 800px) {
+    /* Styles for tablet devices go within this breakpoint */
+        // hide desktop nav
+    .desktopNav {
+        display: none;
+    }
+
+    // show slide-out nav
+    .side-nav {
+        display: block;
+    }
+}
 
 /****************************
     Break point: 480px
@@ -38,3 +54,4 @@
         }
     }
 }
+
