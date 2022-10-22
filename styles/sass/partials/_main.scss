@@ -19,18 +19,21 @@ section{
 // SKILLS
 .skillsFlexContainer{
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
+    // gap: 5rem;
     .skillsText{
-        flex:1;
+        // flex:1;
     }
     .skillsList{
-        flex:1;
+        // flex:1;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 2.5rem;
+        justify-content: center;
+        // gap: 2.5rem;
         li{
             text-align: center;
+            width: calc((100%/4) - 4%);
+            margin: 2%;
         }
     }
 }
@@ -42,7 +45,7 @@ i{
 // PROJECTS
 
 .projectContainer{
-    padding-top: 2rem;
+    padding-top: 3rem;
     display: flex;
     gap: 2rem;
     // &:nth-child(odd){
