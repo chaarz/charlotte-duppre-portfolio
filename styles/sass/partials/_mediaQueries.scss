@@ -45,6 +45,9 @@
 
 @media (max-width: 480px) {
     /* Styles for MOBILE devices go within this breakpoint */
+    section{
+        padding: 1rem 0;
+    }
 
     .skillsFlexContainer{
         .skillsList{

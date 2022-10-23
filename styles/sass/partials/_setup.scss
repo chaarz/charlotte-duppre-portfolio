@@ -16,3 +16,16 @@ html { box-sizing: border-box;}
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
 }
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+  }
+  
+.skip-link:focus {
+left: 0;
+}

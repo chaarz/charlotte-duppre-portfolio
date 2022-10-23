@@ -237,6 +237,19 @@ html {
   white-space: nowrap;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 @font-face {
   font-family: "montserrat";
   src: url("../fonts/montserrat/montserratSemiBold.ttf");
@@ -289,6 +302,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: 2rem;
 }
 
 a {
@@ -510,7 +524,15 @@ section {
   display: flex;
   gap: 2rem;
 }
+.aboutFlexContainer .aboutImgContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .aboutFlexContainer .aboutTextContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,6 +677,7 @@ button {
 
 footer {
   text-align: center;
+  font-size: clamp(0.85rem, 2vh, 1rem);
 }
 
 /****************************
@@ -692,6 +715,9 @@ footer {
 *****************************/
 @media (max-width: 480px) {
   /* Styles for MOBILE devices go within this breakpoint */
+  section {
+    padding: 1rem 0;
+  }
   .skillsFlexContainer .skillsList li {
     width: 42%;
   }
