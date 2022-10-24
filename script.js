@@ -94,7 +94,7 @@ app.populateProjects = () => {
             <p>${item.languages}</p>
             <p>${item.description}</p>
             <div>
-                <a href=${item.live} target="_blank">Live Site</a><span> | </span><a href=${item.repo} target="_blank">Git Repo</a>
+                <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
             </div>
         </div>
         `

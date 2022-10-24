@@ -280,6 +280,7 @@ body {
 
 .logo {
   font-family: "montserrat";
+  font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, blockquote {
@@ -363,9 +364,40 @@ input {
   margin: 0;
 }
 
+.anchorUnderline {
+  position: relative;
+}
+
+.anchorUnderline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #212529;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.anchorUnderline:hover::after,
+.anchorUnderline:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 header .logo {
   border: 2px solid #212529;
-  padding: 0.5rem;
+  padding: 0.75rem 0.5rem;
 }
 header .headerTextContainer {
   height: 80vh;
@@ -385,7 +417,7 @@ header .headerTextContainer {
 }
 
 .navBar {
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,9 +434,9 @@ header .headerTextContainer {
   display: -ms-flexbox;
   display: flex;
   font-family: "montserrat";
-}
-.desktopNav ul li {
-  padding-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  gap: 2rem;
 }
 
 .hamButtonContainer {
@@ -427,10 +459,10 @@ header .headerTextContainer {
       -ms-flex-align: end;
           align-items: flex-end;
   position: fixed;
-  top: 1rem;
+  top: 2.5rem;
   right: 0.5rem;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   z-index: 40;
 }
 .hamButton:hover, .hamButton:focus {
@@ -511,7 +543,7 @@ header .headerTextContainer {
 }
 
 section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .aboutFlexContainer {

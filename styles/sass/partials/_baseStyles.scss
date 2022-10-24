@@ -49,3 +49,28 @@ input {
     padding: 0;
     margin: 0;
   }
+
+.anchorUnderline{
+    position: relative;
+}
+
+.anchorUnderline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $primaryColour;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.anchorUnderline:hover::after,
+.anchorUnderline:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}

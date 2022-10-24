@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .navBar{
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,9 +9,9 @@
 .desktopNav ul{
     display: flex;
     font-family: $headingFont;
-    li{
-        padding-left: 2rem;
-    }
+    font-size: 1.5rem;
+    line-height: 2rem;
+    gap: 2rem;
 }
 
 // MOBILE NAVIGATION
@@ -34,10 +34,10 @@
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
-    top: 1rem;
+    top: 2.5rem;
     right: 0.5rem;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     z-index: 40;
     span,
     span::before,
