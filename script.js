@@ -1,9 +1,37 @@
 const app = {};
 
-// 1. write down all the elements we want to populate on the page
-// 2. create a method to populate the data onto the page
-// 3. in the method, select the element we want to populate our data in
-// 4. loop over the data a create a section for each project
+/*****************
+ MOBILE NAVIGATION
+ *****************/
+
+// Mobile slide-out navigation 
+const hamButton = document.querySelector(".hamButton");
+const mobileNav = document.querySelector(".mobileNavContainer");
+const navLinks = document.querySelectorAll('.mobileNavLink');
+
+const toggleMobileNav = () => {
+    mobileNav.classList.toggle('open');
+  // trigger menu button animation (to become close button)
+    hamButton.classList.toggle('active');
+};
+
+// close the menu if a link is clicked
+navLinks.forEach((navLink) => {
+  navLink.addEventListener('click', toggleMobileNav);
+});
+
+hamButton.addEventListener('click', toggleMobileNav);
+
+/****************
+PROJECTS
+*****************/
+
+// Populate projects into the Projects section
+
+// 1. create an array of projects with all project elements we want to populate on the page 
+// 2. create a method to populate each project onto the page
+// 3. in the method, select the element we want to populate our data into
+// 4. loop over the array of projects, create a section for each project, add the proper class and use innerHTML to add project properties 
 // 5. append the project on the page
 
 // 1. 
@@ -46,15 +74,17 @@ app.myProject = [
     }
 ] 
 
-// 2. create a method
+// 2. create a method to populate each project onto the page
 app.populateProjects = () => {
+    // 3. define the element we want to populate our projects into
     const projListContainer = document.querySelector("#projects .wrapper")
-    // console.log(projListContainer)
+    // 4. loop over the array of projects 
     app.myProject.forEach((item) => {
-        // create a projectContainer div
+        // a. create a projectContainer div for each project
         const projectContainer = document.createElement("div");
-        // add a class of projectContainer to the div
+        // b. add a class of projectContainer to the div
         projectContainer.classList.add("projectContainer");
+        // c. use innerHTML to add project properties
         projectContainer.innerHTML = `
         <div class="projectImgContainer">
             <img src=${item.image} alt=${item.alt}>
@@ -68,6 +98,7 @@ app.populateProjects = () => {
             </div>
         </div>
         `
+        // 5. append the projects on the page
         projListContainer.appendChild(projectContainer)
     })
 }

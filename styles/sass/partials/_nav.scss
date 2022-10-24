@@ -14,76 +14,80 @@
     }
 }
 
-// SLIDE OUT NAV
+// MOBILE NAVIGATION
 
-// 1. Hamburger Button
+// 1. Hide the mobile navigation hamburger menu for desktop view
 
-.menu-button {
+.hamButtonContainer {
+    display: none;
+}
+
+// 2. Hamburger button
+
+.hamButton {
+    border: none;
+    &:hover, &:focus{
+        background: none;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 0.5rem;
     width: 30px;
     height: 30px;
     z-index: 40;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    display: block;
-    position: absolute;
-    height: 3px;
-    background-color: $primaryColour;
-    transition: all 300ms ease;
-    width: 100%;
-}
-
-.hamburger::before {
-    content: '';
-    top: -8px;
-}
-
-.hamburger::after {
-    content: '';
-    top: 8px;
-}
-input[type=checkbox]{
-    opacity: 0;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-}
-
-// 2. Make secondary nagivation menu slide out when hamburger menu is clicked
-
-.slide-out-menu:checked ~ .slide-out-nav {
-    transform: translateX(0%);
-}
-
-.slide-out-menu:checked ~ .menu-button {
-    .hamburger::before {
-        transform: rotate(-90deg) translate(-8px, 0px);
+    span,
+    span::before,
+    span::after {
+        display: block;
+        position: absolute;
+        height: 3px;
+        background-color: $primaryColour;
+        transition: all 300ms ease;
         width: 100%;
     }
 
-    .hamburger {
+    span::before {
+        content: '';
+        top: -10px;
+    }
+
+    span::after {
+        content: '';
+        top: 10px;
+    }
+}
+
+// 3. Animate hamburger button when clicked as mobile navigation opens
+.hamButton.active {
+    span::before {
+        transform: rotate(-90deg) translate(-10px, 0px);
+        width: 100%;
+    }
+
+    span {
         transform: rotate(45deg);
         width: 100%;
     }
 
-    .hamburger::after {
-        transform: rotate(90deg) translate(-8px, 0px);
+    span::after {
+        transform: rotate(90deg) translate(-10px, 0px);
         width: 100%;
     }
 }
 
-// 3. Style the slide-out navigation menu 
+// 4. Make mobile nagivation menu slide out when hamburger button is clicked
 
-.slide-out-nav {
+.mobileNavContainer.open {
+    transform: translateX(0%);
+}
+
+// 5. Style the mobile navigation menu 
+
+.mobileNavContainer {
     background-color: $secondaryColour;
     position: fixed;
     top: 0;
@@ -93,20 +97,19 @@ input[type=checkbox]{
     z-index: 30;
     opacity: 0.95;
     transform: translateX(100%);
-    transition: 0.75s;
-    a {
-        font-size: 2rem;
-    }
-    .nav-links {
+    transition: 0.5s ease-in-out;
+
+    .mobileNavLinks {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15vh;
+        gap: 1rem;
+        margin-top: 30vh;
+        a {
+            font-family: $headingFont;
+            font-size: 2rem;
+        }
     }
 }
 
-// 4. Hide the slide-out navigation menu for desktop view
 
-.side-nav {
-    display: none;
-}
