@@ -1,3 +1,3 @@
-#Portfolio website
+# Portfolio website
 
-** View live site [here](https://charlotteduppre.com).**
+**View live site [here](https://charlotteduppre.com).**
