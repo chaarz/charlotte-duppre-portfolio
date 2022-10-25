@@ -290,7 +290,7 @@ h1, h2, h3, h4, blockquote {
 h1 {
   font-family: "montserrat";
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: clamp(3rem, 5vw, 3.5rem);
   letter-spacing: 1px;
   line-height: 4.5rem;
 }
@@ -427,6 +427,7 @@ header .headerTextContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 40;
 }
 
 .desktopNav ul {
@@ -516,7 +517,7 @@ header .headerTextContainer {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 30;
+  z-index: 20;
   opacity: 0.95;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -706,7 +707,7 @@ button {
 footer {
   padding-top: 2rem;
   text-align: center;
-  font-size: clamp(0.85rem, 2vh, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
 /****************************

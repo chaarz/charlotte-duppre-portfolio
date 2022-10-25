@@ -5,36 +5,32 @@ const app = {};
  *****************/
 
 // Mobile slide-out navigation 
-const hamButton = document.querySelector(".hamButton");
-const mobileNav = document.querySelector(".mobileNavContainer");
-const navLinks = document.querySelectorAll('.mobileNavLink');
+app.mobileSlideOutnav = () => {
+    const hamButton = document.querySelector(".hamButton");
+    const mobileNav = document.querySelector(".mobileNavContainer");
+    const navLinks = document.querySelectorAll(".mobileNavLink");
 
-const toggleMobileNav = () => {
-    mobileNav.classList.toggle('open');
-  // trigger menu button animation (to become close button)
-    hamButton.classList.toggle('active');
-};
+    const toggleMobileNav = () => {
+        mobileNav.classList.toggle('open');
+    // trigger hamburger button animation (to become 'close' button)
+        hamButton.classList.toggle('active');
+    };
 
-// close the menu if a link is clicked
-navLinks.forEach((navLink) => {
-  navLink.addEventListener('click', toggleMobileNav);
-});
+    // close the menu when a mobile nav link is clicked
+    navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', toggleMobileNav);
+    });
 
-hamButton.addEventListener('click', toggleMobileNav);
+    hamButton.addEventListener('click', toggleMobileNav);
+}
 
 /****************
-PROJECTS
+PROJECTS SECTION
 *****************/
 
 // Populate projects into the Projects section
 
-// 1. create an array of projects with all project elements we want to populate on the page 
-// 2. create a method to populate each project onto the page
-// 3. in the method, select the element we want to populate our data into
-// 4. loop over the array of projects, create a section for each project, add the proper class and use innerHTML to add project properties 
-// 5. append the project on the page
-
-// 1. 
+// 1. Create an array of projects with all project elements we want to populate on the page 
 app.myProject = [
     {
         image: "./assets/tastyTable.png",
@@ -106,7 +102,7 @@ app.populateProjects = () => {
 
 app.init = function() {
     app.populateProjects();
+    app.mobileSlideOutnav();
 }
-
 
 app.init();
