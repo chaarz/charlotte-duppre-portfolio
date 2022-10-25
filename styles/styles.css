@@ -292,7 +292,7 @@ h1 {
   font-weight: 600;
   font-size: clamp(3rem, 5vw, 3.5rem);
   letter-spacing: 1px;
-  line-height: 4.5rem;
+  line-height: clamp(3.5rem, 5vw, 4.5rem);
 }
 
 h2 {
