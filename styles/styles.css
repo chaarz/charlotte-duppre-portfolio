@@ -751,4 +751,8 @@ footer {
   .skillsFlexContainer .skillsList li {
     width: 42%;
   }
+  .contactFlexContainer .contactDetails .socialIcons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
