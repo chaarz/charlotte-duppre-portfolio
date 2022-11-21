@@ -33,6 +33,24 @@ PROJECTS SECTION
 // 1. Create an array of projects with all project elements we want to populate on the page 
 app.myProject = [
     {
+        image: "./assets/refrigerationVersification.png",
+        alt: "Image of Refrigeration Versification project",
+        title: "Refrigeration Versification",
+        languages: "HTML | Sass | JavaScript | React | REST API",
+        description: "Remember the endless IRL fun that was Magnetic Poetry? We have recreated this experience in a web application built using React and leveraging Datamuse's API. Features include a drag & drop functionality, an offensive word filter and autocomplete. This agency-style group project was completed with three talented developers.",
+        live: "https://refrigeration-versification-game.netlify.app/",
+        repo: "https://github.com/inspiredGames/refrigerationVersification"
+    },
+    {
+        image: "./assets/rhymify.png",
+        alt: "Image of Rhymify Project",
+        title: "Rhymify",
+        languages: "React | REST API | HTML | CSS | SCSS",
+        description: "Rhymify is word generator application that helps songwriters search for rhymes! The app was built with React, leveraging Datamuse's RESTful API, using asynchronous API calls and error handling. My first react solo project, created in one week.",
+        live: "https://rhymify.netlify.app/",
+        repo: "https://github.com/chaarz/Rhymify"
+    },
+    {
         image: "./assets/tastyTable.png",
         alt: "Image of project Tasty Table",
         title: "Tasty Table",
@@ -49,24 +67,6 @@ app.myProject = [
         description: "The Restaurant Mall is a multi-page PSD conversion made using mockup pieces of a provided website design, featuring a Home, Blog and Contact page. This is a fully responsive website (down to 320px), built with Sass, and adheres to accessibility best standards (including aria labels and proper structural elements like heading hierarchy).",
         live: "https://the-restaurant-mall-cd.netlify.app/",
         repo: "https://github.com/chaarz/Project-1-the-restaurant-mall"
-    },
-    {
-        image: "./assets/tastyPSDconversion.png",
-        alt: "Image of Tasty, a PSD conversion",
-        title: "Tasty, a PSD conversion",
-        languages: "HTML | CSS",
-        description: "Tasty is a PSD conversion project made using mockup pieces of a provided website design, featuring functional, responsible website elements.",
-        live: "#",
-        repo: "https://github.com/chaarz/Chaarz-Tasty-assignment01"
-    },
-    {
-        image: "./assets/spaces.png",
-        alt: "Image of project Spaces",
-        title: "Spaces",
-        languages: "HTML | CSS",
-        description: "Spaces is a PSD conversion project made using mockup pieces of a provided website design, featuring functional, responsible website elements.",
-        live: "https://spaces-cd.netlify.app/",
-        repo: "#"
     }
 ] 
 
