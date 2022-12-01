@@ -397,7 +397,16 @@ input {
 
 header .logo {
   border: 2px solid #212529;
+  border-radius: 5px;
   padding: 0.75rem 0.5rem;
+}
+header .logo p {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  border-right: 10px solid #212529;
+  -webkit-animation: typing 1.5s steps(5, end), blinkingCursor 1.5s step-end infinite;
+          animation: typing 1.5s steps(5, end), blinkingCursor 1.5s step-end infinite;
 }
 header .headerTextContainer {
   height: 80vh;
@@ -416,6 +425,39 @@ header .headerTextContainer {
           align-items: center;
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blinkingCursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #212529;
+  }
+}
+@keyframes blinkingCursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #212529;
+  }
+}
 .navBar {
   padding-top: 2rem;
   display: -webkit-box;
