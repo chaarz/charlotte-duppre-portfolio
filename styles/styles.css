@@ -399,6 +399,8 @@ header .logo {
   border: 2px solid #212529;
   border-radius: 5px;
   padding: 0.75rem 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .logo:hover, header .logo:focus {
   background-color: #212529;
