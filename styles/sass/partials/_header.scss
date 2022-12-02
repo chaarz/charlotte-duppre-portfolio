@@ -6,12 +6,17 @@ header{
         border: 2px solid $primaryColour;
         border-radius: 5px;
         padding: 0.75rem 0.5rem;
-        p{
-            overflow: hidden;
-            white-space: nowrap;
-            margin: 0 auto;
+        &:hover{
+            background-color: $primaryColour;
+        }
+        a{
             border-right: 10px solid $primaryColour;
-            animation: typing 1.5s steps(5, end), blinkingCursor 1.5s step-end infinite;
+            animation: blinkingCursorB 1.5s step-end infinite;
+            &:hover{
+                color: $tertiaryColour;
+                border-right: 10px solid $tertiaryColour;
+                animation: blinkingCursorW 1.5s step-end infinite;
+            }
         }
 
     }
@@ -24,22 +29,22 @@ header{
     }
 }
 
-@keyframes typing {
-    from {
-      width: 0
-    }
-  
-    to {
-      width: 100%
-    }
-  }
-
-@keyframes blinkingCursor {
+@keyframes blinkingCursorB {
     from{
         border-color: transparent
     }
 
     50% {
         border-color: $primaryColour
+    }
+}
+
+@keyframes blinkingCursorW {
+    from{
+        border-color: transparent
+    }
+
+    50% {
+        border-color: $tertiaryColour
     }
 }

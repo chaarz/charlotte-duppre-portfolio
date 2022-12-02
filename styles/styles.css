@@ -400,13 +400,19 @@ header .logo {
   border-radius: 5px;
   padding: 0.75rem 0.5rem;
 }
-header .logo p {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
+header .logo:hover {
+  background-color: #212529;
+}
+header .logo a {
   border-right: 10px solid #212529;
-  -webkit-animation: typing 1.5s steps(5, end), blinkingCursor 1.5s step-end infinite;
-          animation: typing 1.5s steps(5, end), blinkingCursor 1.5s step-end infinite;
+  -webkit-animation: blinkingCursorB 1.5s step-end infinite;
+          animation: blinkingCursorB 1.5s step-end infinite;
+}
+header .logo a:hover {
+  color: #DEE2E6;
+  border-right: 10px solid #DEE2E6;
+  -webkit-animation: blinkingCursorW 1.5s step-end infinite;
+          animation: blinkingCursorW 1.5s step-end infinite;
 }
 header .headerTextContainer {
   height: 80vh;
@@ -425,24 +431,16 @@ header .headerTextContainer {
           align-items: center;
 }
 
-@-webkit-keyframes typing {
+@-webkit-keyframes blinkingCursorB {
   from {
-    width: 0;
+    border-color: transparent;
   }
-  to {
-    width: 100%;
+  50% {
+    border-color: #212529;
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-webkit-keyframes blinkingCursor {
+@keyframes blinkingCursorB {
   from {
     border-color: transparent;
   }
@@ -450,12 +448,20 @@ header .headerTextContainer {
     border-color: #212529;
   }
 }
-@keyframes blinkingCursor {
+@-webkit-keyframes blinkingCursorW {
   from {
     border-color: transparent;
   }
   50% {
-    border-color: #212529;
+    border-color: #DEE2E6;
+  }
+}
+@keyframes blinkingCursorW {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #DEE2E6;
   }
 }
 .navBar {
@@ -599,6 +605,9 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.aboutFlexContainer .aboutImgContainer img {
+  border-radius: 5px;
 }
 .aboutFlexContainer .aboutTextContainer {
   -webkit-box-flex: 2;
@@ -747,7 +756,7 @@ button {
 }
 
 footer {
-  padding-top: 2rem;
+  padding: 2rem 0 1rem 0;
   text-align: center;
   font-size: clamp(0.85rem, 2vw, 1rem);
 }

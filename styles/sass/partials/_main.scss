@@ -10,9 +10,9 @@ section{
     gap: 2rem;
     .aboutImgContainer{
         flex: 1;
-        // img{
-        //    border-radius: 50%;
-        // }
+        img{
+           border-radius: 5px;
+        }
     }
     .aboutTextContainer{
         flex: 2;
