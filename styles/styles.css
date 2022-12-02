@@ -400,7 +400,7 @@ header .logo {
   border-radius: 5px;
   padding: 0.75rem 0.5rem;
 }
-header .logo:hover {
+header .logo:hover, header .logo:focus {
   background-color: #212529;
 }
 header .logo a {
@@ -408,7 +408,7 @@ header .logo a {
   -webkit-animation: blinkingCursorB 1.5s step-end infinite;
           animation: blinkingCursorB 1.5s step-end infinite;
 }
-header .logo a:hover {
+header .logo a:hover, header .logo a:focus {
   color: #DEE2E6;
   border-right: 10px solid #DEE2E6;
   -webkit-animation: blinkingCursorW 1.5s step-end infinite;

@@ -6,13 +6,15 @@ header{
         border: 2px solid $primaryColour;
         border-radius: 5px;
         padding: 0.75rem 0.5rem;
-        &:hover{
+        &:hover,
+        &:focus {
             background-color: $primaryColour;
         }
         a{
             border-right: 10px solid $primaryColour;
             animation: blinkingCursorB 1.5s step-end infinite;
-            &:hover{
+            &:hover,
+            &:focus {
                 color: $tertiaryColour;
                 border-right: 10px solid $tertiaryColour;
                 animation: blinkingCursorW 1.5s step-end infinite;
