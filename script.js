@@ -1,6 +1,17 @@
 const app = {};
 
 /*****************
+PROFILE PIC
+ *****************/
+app.profilePicHover = () => {
+    const profilePic = document.querySelector('.aboutImgContainer img');
+    const grayScaleToggle = () => {
+        profilePic.classList.toggle('grayScale');
+    }
+    profilePic.addEventListener('mouseover', grayScaleToggle);
+    profilePic.addEventListener('mouseleave', grayScaleToggle);
+}
+/*****************
  MOBILE NAVIGATION
  *****************/
 
@@ -101,6 +112,7 @@ app.populateProjects = () => {
 
 
 app.init = function() {
+    app.profilePicHover();
     app.populateProjects();
     app.mobileSlideOutnav();
 }

@@ -11,7 +11,11 @@ section{
     .aboutImgContainer{
         flex: 1;
         img{
-           border-radius: 5px;
+           border-radius: 15px;
+           transition: all 0.3s;
+        }
+        .grayScale{
+            filter: grayscale(100%);
         }
     }
     .aboutTextContainer{

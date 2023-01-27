@@ -609,7 +609,13 @@ section {
           flex: 1;
 }
 .aboutFlexContainer .aboutImgContainer img {
-  border-radius: 5px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.aboutFlexContainer .aboutImgContainer .grayScale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .aboutFlexContainer .aboutTextContainer {
   -webkit-box-flex: 2;
