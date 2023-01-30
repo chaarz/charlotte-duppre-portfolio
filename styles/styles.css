@@ -398,8 +398,8 @@ input {
 header .logo {
   border: 2px solid #212529;
   border-radius: 5px;
-  padding: 0.75rem 0.5rem;
-  z-index: 100;
+  padding: 0.649rem 0.15rem;
+  z-index: 50;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
