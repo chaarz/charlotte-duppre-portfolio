@@ -6,6 +6,7 @@ header{
         border: 2px solid $primaryColour;
         border-radius: 5px;
         padding: 0.75rem 0.5rem;
+        z-index: 100;
         transition: 0.3s;
         &:hover,
         &:focus {

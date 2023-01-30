@@ -399,6 +399,7 @@ header .logo {
   border: 2px solid #212529;
   border-radius: 5px;
   padding: 0.75rem 0.5rem;
+  z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -517,7 +518,7 @@ header .headerTextContainer {
       -ms-flex-align: end;
           align-items: flex-end;
   position: fixed;
-  top: 2.5rem;
+  top: 1.75rem;
   right: 0.5rem;
   width: 40px;
   height: 40px;
