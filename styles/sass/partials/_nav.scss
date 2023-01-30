@@ -1,18 +1,26 @@
 @use "variables" as *;
 
+.stickyNav{
+    position: fixed;
+    top: 0;
+    background-color: rgba(248, 249, 250, 0.9);
+    width: 100%;
+}
+
 .navBar{
-    padding-top: 2rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 40;
 }
+
 .desktopNav ul{
     display: flex;
     font-family: $headingFont;
     font-size: 1.5rem;
     line-height: 2rem;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 // MOBILE NAVIGATION
@@ -96,7 +104,7 @@
     right: 0;
     bottom: 0;
     z-index: 20;
-    opacity: 0.95;
+    opacity: 0.9;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
 
