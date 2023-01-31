@@ -3,8 +3,10 @@
 .stickyNav{
     position: fixed;
     top: 0;
-    background-color: rgba(248, 249, 250, 0.9);
+    background-color: $secondaryColour;
+    opacity: 0.95;
     width: 100%;
+    z-index: 40;
 }
 
 .navBar{
@@ -12,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 40;
 }
 
 .desktopNav ul{
@@ -104,7 +105,7 @@
     right: 0;
     bottom: 0;
     z-index: 20;
-    opacity: 0.9;
+    // opacity: 0.95;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
 

@@ -470,8 +470,10 @@ header .headerTextContainer {
 .stickyNav {
   position: fixed;
   top: 0;
-  background-color: rgba(248, 249, 250, 0.9);
+  background-color: #F8F9FA;
+  opacity: 0.95;
   width: 100%;
+  z-index: 40;
 }
 
 .navBar {
@@ -485,7 +487,6 @@ header .headerTextContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 40;
 }
 
 .desktopNav ul {
@@ -576,7 +577,6 @@ header .headerTextContainer {
   right: 0;
   bottom: 0;
   z-index: 20;
-  opacity: 0.9;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: 0.5s ease-in-out;
