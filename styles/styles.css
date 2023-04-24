@@ -271,10 +271,10 @@ html {
 
 body {
   font-family: "openSans";
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
   color: #212529;
   background-color: #F8F9FA;
-  line-height: 1.45rem;
+  line-height: clamp(1.3rem, 3vw, 1.45rem);
   letter-spacing: 1px;
 }
 
@@ -314,10 +314,18 @@ button {
   font-family: "montserrat";
 }
 
+i {
+  font-size: 2rem;
+}
+
 .wrapper {
   max-width: 1560px;
   width: 90%;
   margin: 0 auto;
+}
+
+section {
+  padding: 2rem 0;
 }
 
 button {
@@ -418,7 +426,7 @@ header .logo a:hover, header .logo a:focus {
           animation: blinkingCursorW 1.5s step-end infinite;
 }
 header .headerTextContainer {
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,6 +440,7 @@ header .headerTextContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
 }
 
 @-webkit-keyframes blinkingCursorB {
@@ -601,10 +610,6 @@ header .headerTextContainer {
   font-size: 2rem;
 }
 
-section {
-  padding: 2rem 0;
-}
-
 .aboutFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,6 +620,12 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .aboutFlexContainer .aboutImgContainer img {
   border-radius: 15px;
@@ -637,6 +648,9 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+.aboutFlexContainer .aboutTextContainer p {
+  line-height: clamp(1.45rem, 3vw, 1.7rem);
 }
 
 .skillsFlexContainer {
@@ -670,10 +684,6 @@ section {
   text-align: center;
   width: 17%;
   margin: 4%;
-}
-
-i {
-  font-size: 2rem;
 }
 
 .projectContainer {
@@ -758,17 +768,18 @@ textarea {
   border-bottom: 2px solid #212529;
   background-color: transparent;
   font-family: "openSans";
-  font-size: clamp(1rem, 2vw, 1rem);
   padding: 0.5rem;
 }
 
 textarea {
+  border-radius: 5px;
   border: 2px solid #212529;
   resize: none;
 }
 
 button {
   margin-top: 0;
+  border-radius: 5px;
 }
 
 footer {
@@ -783,9 +794,9 @@ footer {
 @media (max-width: 1000px) {
   /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
   .aboutFlexContainer,
-.skillsFlexContainer,
-.projectContainer,
-.contactFlexContainer {
+  .skillsFlexContainer,
+  .projectContainer,
+  .contactFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -812,6 +823,9 @@ footer {
 *****************************/
 @media (max-width: 480px) {
   /* Styles for MOBILE devices go within this breakpoint */
+  header .headerTextContainer {
+    gap: 0.5rem;
+  }
   section {
     padding: 1rem 0;
   }

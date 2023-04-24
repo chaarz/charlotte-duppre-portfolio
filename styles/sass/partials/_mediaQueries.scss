@@ -45,6 +45,10 @@
 
 @media (max-width: 480px) {
     /* Styles for MOBILE devices go within this breakpoint */
+    header .headerTextContainer{
+        gap: .5rem;
+    }
+    
     section{
         padding: 1rem 0;
     }
@@ -57,7 +61,7 @@
         }
     }
 
-        // CONTACT ME
+    // CONTACT ME
     .contactFlexContainer{
         .contactDetails{
             .socialIcons {

@@ -25,10 +25,10 @@ html {
 
 body{
     font-family: $bodyFont;
-    font-size: $baseFontSize;
+    font-size: clamp(.8rem, 3vw, $baseFontSize);
     color: $primaryColour;
     background-color: $secondaryColour;
-    line-height: 1.45rem;
+    line-height: clamp(1.3rem, 3vw, 1.45rem);
     letter-spacing: 1px;
 }
 
@@ -66,4 +66,8 @@ a{
 
 button{
     font-family: $headingFont;
+}
+
+i{
+    font-size: 2rem;
 }
