@@ -338,7 +338,7 @@ button {
   color: #212529;
   background-color: #F8F9FA;
   padding: 15px 15px 10px 15px;
-  border: 2px solid #212529;
+  border: 1px solid #212529;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -761,11 +761,15 @@ header .headerTextContainer {
           flex-direction: column;
   gap: 1rem;
 }
+.contactFlexContainer .contactDetails a:hover, .contactFlexContainer .contactDetails a:focus {
+  -webkit-text-decoration: solid underline 2px;
+          text-decoration: solid underline 2px;
+}
 .contactFlexContainer .contactDetails .socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .contactFlexContainer .contactDetails .socialIcons i {
   -webkit-transition: 0.3s ease;
@@ -795,7 +799,7 @@ input,
 textarea {
   color: #212529;
   border: none;
-  border-bottom: 2px solid #212529;
+  border-bottom: 1px solid #212529;
   background-color: transparent;
   font-family: "openSans";
   padding: 0.5rem;
@@ -803,7 +807,7 @@ textarea {
 
 textarea {
   border-radius: 5px;
-  border: 2px solid #212529;
+  border: 1px solid #212529;
   resize: none;
 }
 

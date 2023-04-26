@@ -15,7 +15,7 @@ button{
     color: $primaryColour;
     background-color: $secondaryColour;
     padding: 15px 15px 10px 15px;
-    border: 2px solid $primaryColour;
+    border: 1px solid $primaryColour;
     cursor: pointer;
     transition: 0.3s;
     &:hover, &:focus{

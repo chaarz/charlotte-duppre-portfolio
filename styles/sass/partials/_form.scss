@@ -10,7 +10,7 @@ input,
 textarea {
     color: $primaryColour;
     border: none;
-    border-bottom: 2px solid $primaryColour;
+    border-bottom: 1px solid $primaryColour;
     background-color: transparent;
     font-family: $bodyFont;
     padding: 0.5rem;
@@ -19,7 +19,7 @@ textarea {
 
 textarea {
     border-radius: 5px;
-    border: 2px solid $primaryColour;
+    border: 1px solid $primaryColour;
     resize: none;
 }
 
