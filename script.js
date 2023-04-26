@@ -44,6 +44,15 @@ PROJECTS SECTION
 // 1. Create an array of projects with all project elements we want to populate on the page 
 app.myProject = [
     {
+        image: "./assets/jobi.png",
+        alt: "Image of Jobi project",
+        title: "Jobi job board",
+        languages: "HTML | Sass | JavaScript | React | Firebase",
+        description: "Jobi is a job board application leveraging React that enables users to browse jobs stored in Firebase. This is a multi-page PSD conversion made using mockup pieces of a provided website design, featuring a Home, Job List and Individual Job pages. It is fully responsive (down to 320px) and accessible. 🚧 This is a work in progress. More features coming soon ! 🚧",
+        live: "https://jobi-joba.netlify.app/",
+        repo: "https://github.com/chaarz/Jobi"
+    },
+    {
         image: "./assets/refrigerationVersification.png",
         alt: "Image of Refrigeration Versification project",
         title: "Refrigeration Versification",
