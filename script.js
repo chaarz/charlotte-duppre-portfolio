@@ -23,13 +23,13 @@ app.mobileSlideOutnav = () => {
 
     const toggleMobileNav = () => {
         mobileNav.classList.toggle('open');
-    // trigger hamburger button animation (to become 'close' button)
+        // trigger hamburger button animation (to become 'close' button)
         hamButton.classList.toggle('active');
     };
 
     // close the menu when a mobile nav link is clicked
     navLinks.forEach((navLink) => {
-    navLink.addEventListener('click', toggleMobileNav);
+        navLink.addEventListener('click', toggleMobileNav);
     });
 
     hamButton.addEventListener('click', toggleMobileNav);
@@ -47,7 +47,7 @@ app.myProject = [
         image: "./assets/jobi.png",
         alt: "Image of Jobi project",
         title: "Jobi job board",
-        languages: "HTML | Sass | JavaScript | React | Firebase",
+        languages: ["HTML", "Sass", "React.js", "Firebase"],
         description: "Jobi is a job board application leveraging React that enables users to browse jobs stored in Firebase. This is a multi-page PSD conversion made using mockup pieces of a provided website design, featuring a Home, Job List and Individual Job pages. It is fully responsive (down to 320px) and accessible. 🚧 This is a work in progress. More features coming soon ! 🚧",
         live: "https://jobi-joba.netlify.app/",
         repo: "https://github.com/chaarz/Jobi"
@@ -56,7 +56,7 @@ app.myProject = [
         image: "./assets/refrigerationVersification.png",
         alt: "Image of Refrigeration Versification project",
         title: "Refrigeration Versification",
-        languages: "HTML | Sass | JavaScript | React | REST API",
+        languages: ["HTML", "Sass", "React.js", "REST API"],
         description: "Remember the endless IRL fun that was Magnetic Poetry? We have recreated this experience in a web application built using React and leveraging Datamuse's API. Features include a drag & drop functionality, an offensive word filter and autocomplete. This agency-style group project was completed with three talented developers.",
         live: "https://refrigeration-versification-game.netlify.app/",
         repo: "https://github.com/inspiredGames/refrigerationVersification"
@@ -65,7 +65,7 @@ app.myProject = [
         image: "./assets/rhymify.png",
         alt: "Image of Rhymify Project",
         title: "Rhymify",
-        languages: "React | REST API | HTML | CSS | SCSS",
+        languages: ["React.js", "REST API", "HTML", "Sass"],
         description: "Rhymify is word generator application that helps songwriters search for rhymes! The app was built with React, leveraging Datamuse's RESTful API, using asynchronous API calls and error handling. My first react solo project, created in one week.",
         live: "https://rhymify.netlify.app/",
         repo: "https://github.com/chaarz/Rhymify"
@@ -74,7 +74,7 @@ app.myProject = [
         image: "./assets/tastyTable.png",
         alt: "Image of project Tasty Table",
         title: "Tasty Table",
-        languages: "HTML | Sass | JavaScript | REST API",
+        languages: ["HTML", "Sass", "JavaScript", "REST API"],
         description: "Tasty Table is food application leveraging Tasty's RESTful API and built with vanilla JavaScript. Features include an autocomplete and recipe generator using asynchronous API calls and error handling. This was a pair programming project completed with another developer.",
         live: "https://tasty-table.netlify.app/",
         repo: "https://github.com/tastyTable/tastyTableApp"
@@ -83,13 +83,14 @@ app.myProject = [
         image: "./assets/theRestaurantMall.png",
         alt: "Image of The Restaurant Mall Project",
         title: "The Restaurant Mall",
-        languages: "HTML | Sass | JavaScript",
+        languages: ["HTML", "CSS", "Sass", "JavaScript"],
         description: "The Restaurant Mall is a multi-page PSD conversion made using mockup pieces of a provided website design, featuring a Home, Blog and Contact page. This is a fully responsive website (down to 320px), built with Sass, and adheres to accessibility best standards (including aria labels and proper structural elements like heading hierarchy).",
         live: "https://the-restaurant-mall-cd.netlify.app/",
         repo: "https://github.com/chaarz/Project-1-the-restaurant-mall"
     }
-] 
+]
 
+console.log(app.myProject);
 // 2. create a method to populate each project onto the page
 app.populateProjects = () => {
     // 3. define the element we want to populate our projects into
@@ -107,7 +108,10 @@ app.populateProjects = () => {
         </div>
         <div class="projectDescription">
             <h3>${item.title}</h3>
-            <p>${item.languages}</p>
+            <ul><li>${item.languages[0]}</li>
+            <li>${item.languages[1]}</li>
+            <li>${item.languages[2]}</li>
+            <li>${item.languages[3]}</li></ul>
             <p>${item.description}</p>
             <div>
                 <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
@@ -120,7 +124,7 @@ app.populateProjects = () => {
 }
 
 
-app.init = function() {
+app.init = function () {
     app.profilePicHover();
     app.populateProjects();
     app.mobileSlideOutnav();
