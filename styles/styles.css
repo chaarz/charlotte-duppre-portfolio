@@ -533,7 +533,7 @@ header .headerTextContainer {
       -ms-flex-align: end;
           align-items: flex-end;
   position: fixed;
-  top: 1.75rem;
+  top: 0.15rem;
   right: 0.5rem;
   width: 40px;
   height: 40px;
