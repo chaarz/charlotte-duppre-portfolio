@@ -784,7 +784,17 @@ header .headerTextContainer {
           flex: 1;
 }
 
-.contactForm {
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+.formContainer .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,28 +804,71 @@ header .headerTextContainer {
           flex-direction: column;
   gap: 1rem;
 }
-
-input,
-textarea {
+.formContainer .contactForm input,
+.formContainer .contactForm textarea {
   color: #212529;
   border: none;
+  outline: transparent;
   border-bottom: 1px solid #212529;
   background-color: transparent;
   font-family: "openSans";
   padding: 0.5rem;
 }
-
-textarea {
+.formContainer .contactForm textarea {
   border-radius: 5px;
   border: 1px solid #212529;
   resize: none;
 }
-
-button {
+.formContainer .contactForm button {
   margin-top: 0;
   border-radius: 5px;
 }
+.formContainer #myFormStatus {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.formContainer #myFormStatus.success {
+  background-color: rgb(211, 250, 153);
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+.formContainer #myFormStatus.error {
+  background-color: rgb(250, 129, 92);
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
 
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 footer {
   padding: 2rem 0 1rem 0;
   text-align: center;

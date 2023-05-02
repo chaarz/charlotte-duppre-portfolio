@@ -90,7 +90,6 @@ app.myProject = [
     }
 ]
 
-console.log(app.myProject);
 // 2. create a method to populate each project onto the page
 app.populateProjects = () => {
     // 3. define the element we want to populate our projects into
@@ -123,11 +122,51 @@ app.populateProjects = () => {
     })
 }
 
+/************************
+CONTACT FORM REDIRECTION
+************************/
+
+app.contactForm = () => {
+    var form = document.getElementById("myForm");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("myFormStatus");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.classList.add('success');
+                status.innerHTML = "🎉 Message sent ! Thank you";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.classList.add('error');
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.classList.add('error');
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+}
 
 app.init = function () {
     app.profilePicHover();
     app.populateProjects();
     app.mobileSlideOutnav();
+    app.contactForm();
 }
 
 app.init();

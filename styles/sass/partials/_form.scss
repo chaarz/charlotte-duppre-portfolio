@@ -1,29 +1,60 @@
 @use "variables" as *;
 
-.contactForm{
+.formContainer{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        input,
+        textarea {
+            color: $primaryColour;
+            border: none;
+            outline: transparent;
+            border-bottom: 1px solid $primaryColour;
+            background-color: transparent;
+            font-family: $bodyFont;
+            padding: .5rem;
+        }
+        textarea {
+            border-radius: 5px;
+            border: 1px solid $primaryColour;
+            resize: none;
+        }
+        button{
+            margin-top: 0;
+            border-radius: 5px;
+        }
+    }
+    #myFormStatus{
+        width: 100%;
+        text-align: center;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        &.success{
+            background-color: rgb(211, 250, 153);
+            animation: status 4s ease forwards;
+        }
+        &.error{
+            background-color: rgb(250, 129, 92);
+            animation: status 4s ease forwards;
+        }
+    }
 }
 
-input,
-textarea {
-    color: $primaryColour;
-    border: none;
-    border-bottom: 1px solid $primaryColour;
-    background-color: transparent;
-    font-family: $bodyFont;
-    padding: 0.5rem;
-    // width: 100%;
-}
-
-textarea {
-    border-radius: 5px;
-    border: 1px solid $primaryColour;
-    resize: none;
-}
-
-button{
-    margin-top: 0;
-    border-radius: 5px;
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
