@@ -53,7 +53,7 @@ app.myProject = [
         repo: "https://github.com/chaarz/Jobi"
     },
     {
-        image: "./assets/refrigerationVersification.png",
+        image: "./assets/refrigerationVersificationTest.png",
         alt: "Image of Refrigeration Versification project",
         title: "Refrigeration Versification",
         languages: ["HTML", "Sass", "React.js", "REST API"],
@@ -62,7 +62,7 @@ app.myProject = [
         repo: "https://github.com/inspiredGames/refrigerationVersification"
     },
     {
-        image: "./assets/rhymify.png",
+        image: "./assets/rhymify2.png",
         alt: "Image of Rhymify Project",
         title: "Rhymify",
         languages: ["React.js", "REST API", "HTML", "Sass"],
@@ -71,7 +71,7 @@ app.myProject = [
         repo: "https://github.com/chaarz/Rhymify"
     },
     {
-        image: "./assets/tastyTable.png",
+        image: "./assets/tastyTable2.png",
         alt: "Image of project Tasty Table",
         title: "Tasty Table",
         languages: ["HTML", "Sass", "JavaScript", "REST API"],
@@ -80,7 +80,7 @@ app.myProject = [
         repo: "https://github.com/tastyTable/tastyTableApp"
     },
     {
-        image: "./assets/theRestaurantMall.png",
+        image: "./assets/theRestaurantMall2.png",
         alt: "Image of The Restaurant Mall Project",
         title: "The Restaurant Mall",
         languages: ["HTML", "CSS", "Sass", "JavaScript"],
