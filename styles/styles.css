@@ -713,8 +713,8 @@ header .headerTextContainer {
       flex-wrap: wrap;
 }
 .projectList .projectContainer {
-  width: 46%;
-  margin: 2%;
+  width: 48%;
+  margin: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,6 +729,21 @@ header .headerTextContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.projectList .projectContainer .projectImgContainer .projectLinks {
+  position: absolute;
+  bottom: 0.5rem;
 }
 .projectList .projectContainer .projectDescription {
   padding: 0 0.5rem 0.5rem 0.5rem;
@@ -758,20 +773,6 @@ header .headerTextContainer {
   -webkit-box-shadow: 3px 3px 3px #ADB5BD;
           box-shadow: 3px 3px 3px #ADB5BD;
   padding: 0 0.25rem;
-}
-.projectList .projectContainer .projectDescription .desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1rem;
 }
 
 .contactFlexContainer {
@@ -955,6 +956,9 @@ footer {
   }
   .skillsFlexContainer .skillsList li {
     width: 42%;
+  }
+  .projectList .projectContainer .projectImgContainer .projectLinks {
+    bottom: 0.25rem;
   }
   .contactFlexContainer .contactDetails .socialIcons {
     -ms-flex-pack: distribute;

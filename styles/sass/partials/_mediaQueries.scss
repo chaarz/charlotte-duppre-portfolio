@@ -61,10 +61,22 @@
         padding: 1rem 0;
     }
 
+    // SKILLS
     .skillsFlexContainer{
         .skillsList{
             li{
                 width: calc((100%/2) - 8%);
+            }
+        }
+    }
+
+    // PROJECTS
+    .projectList{
+        .projectContainer{
+            .projectImgContainer{
+                .projectLinks{
+                    bottom: .25rem;
+                }
             }
         }
     }

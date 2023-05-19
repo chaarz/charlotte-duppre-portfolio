@@ -104,6 +104,9 @@ app.populateProjects = () => {
         projectContainer.innerHTML = `
         <div class="projectImgContainer">
             <img src=${item.image} alt=${item.alt}>
+            <div class="projectLinks">
+                <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
+            </div>
         </div>
         <div class="projectDescription">
             <h3>${item.title}</h3>
@@ -113,9 +116,6 @@ app.populateProjects = () => {
             <li>${item.languages[3]}</li></ul>
             <div class="desc">
                 <p>${item.description}</p>
-                <div class="projectLinks">
-                    <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
-                </div>
             </div>
         </div>
         `
