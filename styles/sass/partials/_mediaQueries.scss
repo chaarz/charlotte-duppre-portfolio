@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /****************************
     Break point: 1000px
 *****************************/
@@ -72,11 +74,19 @@
 
     // PROJECTS
     .projectList{
+        width: 100%;
         .projectContainer{
+            margin: 1% 0;
+            gap: .5rem;
+            border: none;
+            border-top: 2px solid $tertiaryColour;
             .projectImgContainer{
                 .projectLinks{
                     bottom: .25rem;
                 }
+            }
+            .projectDescription{
+                padding: 0 5%;
             }
         }
     }

@@ -957,8 +957,20 @@ footer {
   .skillsFlexContainer .skillsList li {
     width: 42%;
   }
+  .projectList {
+    width: 100%;
+  }
+  .projectList .projectContainer {
+    margin: 1% 0;
+    gap: 0.5rem;
+    border: none;
+    border-top: 2px solid #DEE2E6;
+  }
   .projectList .projectContainer .projectImgContainer .projectLinks {
     bottom: 0.25rem;
+  }
+  .projectList .projectContainer .projectDescription {
+    padding: 0 5%;
   }
   .contactFlexContainer .contactDetails .socialIcons {
     -ms-flex-pack: distribute;
