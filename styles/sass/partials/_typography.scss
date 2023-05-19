@@ -25,7 +25,7 @@ html {
 
 body{
     font-family: $bodyFont;
-    font-size: clamp(.8rem, 3vw, $baseFontSize);
+    font-size: clamp(.8rem, 1vw, $baseFontSize);
     color: $primaryColour;
     background-color: $secondaryColour;
     line-height: clamp(1.3rem, 3vw, 1.45rem);

@@ -44,7 +44,7 @@ PROJECTS SECTION
 // 1. Create an array of projects with all project elements we want to populate on the page 
 app.myProject = [
     {
-        image: "./assets/jobi.png",
+        image: "./assets/jobi-test2.png",
         alt: "Image of Jobi project",
         title: "Jobi job board",
         languages: ["HTML", "Sass", "React.js", "Firebase"],
@@ -93,7 +93,7 @@ app.myProject = [
 // 2. create a method to populate each project onto the page
 app.populateProjects = () => {
     // 3. define the element we want to populate our projects into
-    const projListContainer = document.querySelector("#projects .wrapper")
+    const projListContainer = document.querySelector("#projects .projectList")
     // 4. loop over the array of projects 
     app.myProject.forEach((item) => {
         // a. create a projectContainer div for each project
@@ -111,9 +111,11 @@ app.populateProjects = () => {
             <li>${item.languages[1]}</li>
             <li>${item.languages[2]}</li>
             <li>${item.languages[3]}</li></ul>
-            <p>${item.description}</p>
-            <div>
-                <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
+            <div class="desc">
+                <p>${item.description}</p>
+                <div class="projectLinks">
+                    <a class="anchorUnderline" href=${item.live} target="_blank">Live Site</a><span> | </span><a class="anchorUnderline" href=${item.repo} target="_blank">Git Repo</a>
+                </div>
             </div>
         </div>
         `
