@@ -946,6 +946,9 @@ footer {
   /* Styles for MOBILE devices go within this breakpoint */
   header .headerTextContainer {
     gap: 0.5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   section {
     padding: 1rem 0;
