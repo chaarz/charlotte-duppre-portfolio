@@ -914,7 +914,6 @@ footer {
   /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
   .aboutFlexContainer,
   .skillsFlexContainer,
-  .projectContainer,
   .contactFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -926,7 +925,7 @@ footer {
   }
 }
 /****************************
-    Break point: 480px
+    Break point: 800px
 *****************************/
 @media (max-width: 800px) {
   /* Styles for tablet devices go within this breakpoint */
@@ -935,6 +934,9 @@ footer {
   }
   .hamButtonContainer {
     display: block;
+  }
+  .projectList .projectContainer {
+    width: 100%;
   }
 }
 /****************************

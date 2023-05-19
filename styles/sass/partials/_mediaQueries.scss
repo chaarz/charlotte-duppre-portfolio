@@ -8,7 +8,6 @@
 
     .aboutFlexContainer,
     .skillsFlexContainer,
-    .projectContainer,
     .contactFlexContainer{
         flex-direction: column;
     }
@@ -23,12 +22,13 @@
 }
 
 /****************************
-    Break point: 480px
+    Break point: 800px
 *****************************/
 
 @media (max-width: 800px) {
     /* Styles for tablet devices go within this breakpoint */
-        // hide desktop nav
+
+    // hide desktop nav
     .desktopNav {
         display: none;
     }
@@ -36,6 +36,13 @@
     // show mobile navigation
     .hamButtonContainer {
         display: block;
+    }
+
+    // PROJECTS:
+    .projectList{
+        .projectContainer{
+            width: 100%;
+        }
     }
 }
 
