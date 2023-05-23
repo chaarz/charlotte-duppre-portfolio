@@ -726,9 +726,6 @@ header .headerTextContainer {
   border: 2px solid #DEE2E6;
 }
 .projectList .projectContainer .projectImgContainer {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,9 +744,6 @@ header .headerTextContainer {
 }
 .projectList .projectContainer .projectDescription {
   padding: 0 0.5rem 0.5rem 0.5rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
